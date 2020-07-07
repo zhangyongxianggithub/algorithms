@@ -8,6 +8,8 @@ package com.bestzyx.algorithms.sort;
  *
  */
 
+import java.util.Arrays;
+
 public class SelectionSort {
 
 
@@ -29,5 +31,12 @@ public class SelectionSort {
         int tmp = vals[one];
         vals[one] = vals[other];
         vals[other] = tmp;
+    }
+
+    public static void main(String[] args) {
+        int[] vals = new int[]{0, 29, 2, 54, 31, 15, 25, 45, 9};
+        System.out.println(Arrays.toString(vals));
+        selectionSort(vals);
+        System.out.println(Arrays.toString(vals));
     }
 }
