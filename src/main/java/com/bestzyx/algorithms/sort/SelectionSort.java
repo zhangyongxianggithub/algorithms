@@ -8,7 +8,9 @@ package com.bestzyx.algorithms.sort;
  *
  */
 
-import java.util.Arrays;
+import static com.bestzyx.algorithms.utils.ArrayUtils.swap;
+import static com.bestzyx.algorithms.utils.PrintUtils.printArray;
+
 
 public class SelectionSort {
 
@@ -27,16 +29,11 @@ public class SelectionSort {
         return vals;
     }
 
-    private static void swap(int[] vals, int one, int other) {
-        int tmp = vals[one];
-        vals[one] = vals[other];
-        vals[other] = tmp;
-    }
 
     public static void main(String[] args) {
         int[] vals = new int[]{0, 29, 2, 54, 31, 15, 25, 45, 9};
-        System.out.println(Arrays.toString(vals));
+        printArray(vals);
         selectionSort(vals);
-        System.out.println(Arrays.toString(vals));
+        printArray(vals);
     }
 }
