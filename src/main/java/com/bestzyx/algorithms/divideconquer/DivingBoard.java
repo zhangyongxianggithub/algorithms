@@ -2,10 +2,6 @@ package com.bestzyx.algorithms.divideconquer;
 
 import com.bestzyx.algorithms.utils.PrintUtils;
 
-import java.util.HashSet;
-import java.util.Set;
-import java.util.stream.Collectors;
-
 /*
  * Created by zhangyongxiang <zyxfox@foxmail.com> on 2020-07-08 15:18
  *
@@ -33,24 +29,25 @@ k = 3
 public class DivingBoard {
 
     public static void main(String[] args) {
-        PrintUtils.printArray(divingBoard(1, 1, 100000));
+        PrintUtils.printArray(divingBoard(5, 95, 983));
     }
 
     public static int[] divingBoard(int shorter, int longer, int k) {
-        Set<Integer> sets = new HashSet<>();
-        int index = 0;
-        if (k > 1) {
-            index++;
-            sets.add(shorter);
-            sets.add(longer);
+        if (k == 0) {
+            return new int[0];
         }
-        while (index < k) {
-            Set<Integer> newSet = sets.stream().map(value -> value + shorter).collect(Collectors.toSet());
-            newSet.addAll(sets.stream().map(value -> value + longer).collect(Collectors.toSet()));
-            sets = newSet;
-            index++;
+        int subtraction = longer - shorter;
+        int min = shorter * k;
+        if (subtraction > 0) {
+            int[] result = new int[k + 1];
+            result[0] = min;
+            for (int index = 1; index < k + 1; index++) {
+                result[index] = result[index - 1] + subtraction;
+            }
+            return result;
+        } else {
+            return new int[]{min};
         }
-        return sets.stream().mapToInt(Integer::intValue).toArray();
     }
 
 }
