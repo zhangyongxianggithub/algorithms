@@ -11,13 +11,12 @@ package com.bestzyx.algorithms.sort;
 import static com.bestzyx.algorithms.utils.ArrayUtils.swap;
 import static com.bestzyx.algorithms.utils.PrintUtils.printArray;
 
-
 public class SelectionSort {
-
-
+    
     public static int[] selectionSort(int[] vals) {
-
-        for (int smallestIndex = 0; smallestIndex < vals.length - 1; smallestIndex++) {
+        
+        for (int smallestIndex = 0; smallestIndex < vals.length
+                - 1; smallestIndex++) {
             int leftSmallest = smallestIndex;
             for (int index = smallestIndex + 1; index < vals.length; index++) {
                 if (vals[index] < vals[leftSmallest]) {
@@ -28,10 +27,9 @@ public class SelectionSort {
         }
         return vals;
     }
-
-
+    
     public static void main(String[] args) {
-        int[] vals = new int[]{0, 29, 2, 54, 31, 15, 25, 45, 9};
+        int[] vals = new int[] { 0, 29, 2, 54, 31, 15, 25, 45, 9 };
         printArray(vals);
         selectionSort(vals);
         printArray(vals);
