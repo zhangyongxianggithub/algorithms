@@ -1,9 +1,9 @@
 package com.bestzyx.algorithms.interview;
 
-/*
+/**
  * Created by zhangyongxiang <zyxfox@foxmail.com> on 2020-07-08 18:51
  *
- */
+ **/
 public class WordCount {
     
     public static int wc(String line) {

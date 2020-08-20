@@ -1,12 +1,12 @@
 package com.bestzyx.algorithms.sort;
 
-/*
+/**
  * Created by zhangyongxiang<zyxfoxmail.com> on 2020-07-05 12:24
  *
  * selection sort algorithms
  *
  *
- */
+ **/
 
 import static com.bestzyx.algorithms.utils.ArrayUtils.swap;
 import static com.bestzyx.algorithms.utils.PrintUtils.printArray;
