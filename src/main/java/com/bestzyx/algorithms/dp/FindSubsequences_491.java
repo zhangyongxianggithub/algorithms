@@ -22,6 +22,7 @@ import java.util.List;
  **/
 public class FindSubsequences_491 {
     public List<List<Integer>> findSubsequences(int[] nums) {
+        int[][] dp = new int[nums.length][];
 
     }
 }
