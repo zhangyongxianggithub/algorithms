@@ -22,9 +22,8 @@ import java.util.List;
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  **/
 public class FindSubsequences_491 {
-    public static List<List<Integer>> findSubsequences(int[] nums) {
-        int[][] dp = new int[nums.length][];
+    public static List<List<Integer>> findSubsequences(final int[] nums) {
+        final int[][] dp = new int[nums.length][];
         return null;
-        
     }
 }
