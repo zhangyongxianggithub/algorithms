@@ -1,4 +1,4 @@
-package com.bestzyx.algorithms.lecture.chapter3dp;
+package com.bestzyx.algorithms.lecture.chapter4greedy;
 
 /**
  * @author zhangyongxiang
