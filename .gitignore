@@ -1,0 +1,10 @@
+**/*.idea
+**/*.iml
+**/target
+**/*.gitignore
+**/.classpath
+**/.project
+**/.settings
+**/.factorypath
+**/.mvn
+**/.DS_Store
