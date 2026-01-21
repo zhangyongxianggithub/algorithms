@@ -8,3 +8,5 @@
 **/.factorypath
 **/.mvn
 **/.DS_Store
+.env
+**/.venv
